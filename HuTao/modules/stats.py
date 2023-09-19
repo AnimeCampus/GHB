@@ -2,10 +2,10 @@ import HuTao.Config
 import platform
 import time
 import datetime
-from HuTao import app, dbname, StartTime
+from HuTao import app, dbname
 from pyrogram import filters , Client
 from platform import python_version
-from Itachi.Config import SUDO as SUPREME_USERS
+from HuTao.Config import SUDO as SUPREME_USERS
 from psutil import boot_time, cpu_percent, disk_usage, virtual_memory
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
