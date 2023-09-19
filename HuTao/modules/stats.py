@@ -2,7 +2,7 @@ from HuTao import app, dbname
 from pyrogram import filters
 from pyrogram.types import Message
 from HuTao.database.users_db import Users
-from HuTao.Config import OWNER, SUDO
+from HuTao.Config import OWNER
 
 usrdb = dbname["users"]
 
@@ -10,7 +10,7 @@ usrdb = dbname["users"]
 async def get_stats(_, message: Message):
     user_id = message.from_user.id
 
-    if user_id not in SUDO and user_id != OWNER:
+    if user_id not in OWNER:
         await message.reply_text("You are not authorized to use this command.")
         return
 
