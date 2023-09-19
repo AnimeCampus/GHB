@@ -2,6 +2,7 @@
 #Copyright (c) 2023, ©NovaNetworks
 
 from HuTao.database import *
+from HuTao import dbname
 
 notes = dbname["notes"] 
 
