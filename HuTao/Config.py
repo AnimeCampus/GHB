@@ -30,4 +30,4 @@ OWNER = list({int(x)for x in ("6198858059").split()}) #OWNER ID
 
 DB_URL = "mongodb+srv://sukuna:fazaljuly2@sukuna.vipbn9a.mongodb.net/?retryWrites=true&w=majority" # MONGO DB URL
 
-SQL_URL = "postgresql://aubuczso:SOWHk8pqMIxI-Ut2uRVzfmCY3I19DBmo@jelani.db.elephantsql.com/aubuczso" # ELEPHANT SQL URL
+SQL_URL = "postgres://lrorrkxn:QvwXgB1bmq536gN4qSyhcowj98XGSsfT@arjuna.db.elephantsql.com/lrorrkxn" # ELEPHANT SQL URL
