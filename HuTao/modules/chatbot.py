@@ -89,7 +89,7 @@ async def _rmchat(app : Client, query : CallbackQuery):
 
 async def itachi_message(message : Message):
     reply_message = message.reply_to_message
-    if message.text.lower() == "HuTao":
+    if message.text.lower() == "itachi":
         return True
     elif BOT_USERNAME in message.text.upper():
         return True
@@ -109,7 +109,7 @@ async def chatbot(_, message):
         if not await itachi_message(message):
             return  
         await _.send_chat_action(chat_id, enums.ChatAction.TYPING)      
-        url = f"https://api.safone.me/chatbot?query={message.text}&user_id=69&bot_name=the%20komi&bot_master=nano"
+        url = f"https://api.safone.me/chatbot?query={message.text}&user_id=69&bot_name=itachi%20uchiha&bot_master=alpha"
         results = requests.get(url).json() 
         await asyncio.sleep(0.5)
         to_reply = results["response"]
