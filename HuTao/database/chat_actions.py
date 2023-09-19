@@ -1,5 +1,6 @@
 from functools import wraps
 from HuTao import app
+from HuTao.database import *
 
 def send_action(action):   
     def decorator(func):
