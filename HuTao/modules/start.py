@@ -37,8 +37,8 @@ home_keyboard_pm = InlineKeyboardMarkup(
             InlineKeyboardButton(text="ADD ME",url=f"http://t.me/{BOT_USERNAME}?startgroup=new")
         ],
         [
-            InlineKeyboardButton(text="DEVELOPER", url="https://t.me/KIRITO1240"),
-            InlineKeyboardButton(text="SOURCE",url="https://t.me/NovaNetworks"),
+            InlineKeyboardButton(text="DEVELOPER", url="https://t.me/GenXNano"),
+            InlineKeyboardButton(text="SUPPORT",url="https://t.me/x"),
         ],
         [
             InlineKeyboardButton(text="HELP", callback_data="help_commands")           
@@ -60,7 +60,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message: Message):
     if message.chat.type.value != "private":
         return await message.reply_photo(
-            photo="https://graph.org//file/de94bb9e07ec7bd86123d.jpg",
+            photo="https://graph.org//file/17f9173e06a2348da161f.jpg",
             caption="With every step I take, I leave a trail of ashes and memories.",
             reply_markup=keyboard,
         )
@@ -72,13 +72,13 @@ async def start(_, message: Message):
                 "**⍟ HELP FOR: {mod}**\n".format(mod=HELPABLE[module].__mod__)
                 + HELPABLE[module].__help__
             )
-            await message.reply_photo("https://graph.org//file/9e756c52fdd881b44ecc8.png",caption=text, reply_markup=InlineKeyboardMarkup(
+            await message.reply_photo("https://graph.org//file/17f9173e06a2348da161f.jpg",caption=text, reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("BACK", callback_data="help_back")]]
             ))
         if name == "help":
             text, keyb = await help_parser(BOT_NAME)
             await message.reply_photo(
-                "https://graph.org//file/9e756c52fdd881b44ecc8.png",
+                "https://graph.org//file/17f9173e06a2348da161f.jpg",
                 caption=text,
                 reply_markup=keyb,
             )
@@ -92,7 +92,7 @@ async def start(_, message: Message):
             await note_redirect(message)
     else:
         await message.reply_photo(
-            photo="https://graph.org//file/2bba048fefef637247d6a.png",
+            photo="https://graph.org//file/17f9173e06a2348da161f.jpg",
             caption=PM_TEXT,
             reply_markup=home_keyboard_pm,
         )
@@ -128,7 +128,7 @@ async def help_command(_, message: Message):
                 "**⍟ HELP FOR: {mod}**\n".format(mod=HELPABLE[name].__mod__)
                 + HELPABLE[name].__help__
             )
-            await message.reply_photo("https://graph.org//file/9e756c52fdd881b44ecc8.png",caption=text, reply_markup=InlineKeyboardMarkup(
+            await message.reply_photo("https://graph.org//file/17f9173e06a2348da161f.jpg",caption=text, reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("BACK", callback_data="help_back")]]
             ))
         else:
@@ -141,7 +141,7 @@ async def help_command(_, message: Message):
     else:
         text, help_keyboard = await help_parser(message.from_user.first_name)
         await message.reply_photo(
-            "https://graph.org//file/9e756c52fdd881b44ecc8.png",
+            "https://graph.org//file/17f9173e06a2348da161f.jpg",
             caption=text, reply_markup=help_keyboard
         )
 
