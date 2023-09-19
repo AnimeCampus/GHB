@@ -15,8 +15,7 @@ from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 async def _stats(client,message):
      if message.from_user.id not in SUDO:
           return
-     status = "** 「 Bot Statistics: 」**\n\n"
-     status += f'**• Total Chats :** `{await dbname.chats.count_documents({})}`\n'
+     status = "** 「 Bot Statistics: 」**\n\n"  
      status += f'**• Total Users :** `{await dbname.users.count_documents({})}`\n'   
      await message.reply_text(status,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("❌ Close",callback_data='close')]]))
     
