@@ -2,7 +2,7 @@ import os
 import requests
 import json
 import asyncio
-from HuTao import app, BOT_USERNAME, BOT_ID, BOT_NAME,db
+from HuTao import app, BOT_USERNAME, BOT_ID, BOT_NAME, dbname
 from pyrogram import filters, enums, Client
 from pyrogram.types import Message , InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 
 from HuTao.database.chat_actions import send_action
