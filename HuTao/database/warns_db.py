@@ -1,4 +1,5 @@
 from HuTao.database import *
+from HuTao import dbname
 from typing import Dict,Union
 from string import ascii_lowercase
 
