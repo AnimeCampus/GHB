@@ -7,7 +7,7 @@ from HuTao.helpers.errors import capture_err
 from HuTao.helpers.permission import adminsOnly
 from HuTao.database.anti_db import is_nsfw_on, nsfw_off, nsfw_on
 
-arq = "your arq api key"
+arq = "XYKXSU-JOGKVB-APSOIU-MRXKZP-ARQ"
 
 __mod_name__ = "Anti-NSFW​"
 
