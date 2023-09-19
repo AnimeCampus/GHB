@@ -4,7 +4,7 @@ from pyrogram import filters
 
 from HuTao import app, BOT_USERNAME as bn
 from HuTao.helpers.errors import capture_err
-from HuTao.helpers.status import user_admin as adminsOnly
+from HuTao.helpers.permission import adminsOnly
 from HuTao.database.anti_db import is_nsfw_on, nsfw_off, nsfw_on
 
 arq = "your arq api key"
