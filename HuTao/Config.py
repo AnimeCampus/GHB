@@ -8,7 +8,7 @@ LOGGER = getLogger(__name__)
 
 # Required ENV
 try:
-    BOT_TOKEN = "6270655198:AAEqPMXf4jVft2pNwz58AGzzyqkrOYRBX2E" # BOT TOKEN
+    BOT_TOKEN = "5691954374:AAFxuqGhI_uuCrgtHmXGyfL2HuLNClzoeDI" # BOT TOKEN
     API_ID = 14056295  # API ID
     API_HASH = "9ae65901d2eeb5854cc5aa562566d34a" # API HASH
 except Exception as e:
@@ -22,7 +22,7 @@ COMMAND_HANDLER = ". /".split() # COMMAND HANDLER
 
 SUDO = list({int(x)for x in ("").split()})
 
-SUPPORT_CHAT = "Lux_bot_support" # SUPPORT GROUP (ID OR USERNAME)
+SUPPORT_CHAT = "NanoSTestingArea" # SUPPORT GROUP (ID OR USERNAME)
 
 LOG_CHANNEL_ID = -1001884764127 #LOG GROUP ID FOR YOUR BOT
 
