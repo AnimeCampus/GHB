@@ -3,6 +3,7 @@
 
 import datetime
 from HuTao.database import *
+from HuTao import dbname
 
 users = dbname["users"]
 chats = dbname["chats"]
