@@ -5,7 +5,7 @@ import datetime
 from HuTao import app, dbname, get_readable_time, StartTime
 from pyrogram import filters , Client
 from platform import python_version
-from Itachi.Config import SUPER_USERS as SUPREME_USERS
+from Itachi.Config import SUDO as SUPREME_USERS
 from psutil import boot_time, cpu_percent, disk_usage, virtual_memory
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
