@@ -47,7 +47,7 @@ async def handle_chatbot_message(_, message):
         await message.reply_text(to_reply)
 
 # Register the chatbot message handler
-app.add_handler(handle_chatbot_message, filters.text & ~filters.bot & ~filters.via_bot)
+app.add_handler(handle_chatbot_message, filters.text & ~filters.bot & ~filters.via_bot, groups=9)
 
 # Callback to enable chatbot
 @app.on_callback_query(filters.regex("add_chat"))
