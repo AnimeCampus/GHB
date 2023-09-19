@@ -22,6 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 from HuTao.database import *
+from HuTao import dbname
 
 nsfwdb = dbname["nsfw"] 
 
