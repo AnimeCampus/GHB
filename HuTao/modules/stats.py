@@ -13,13 +13,14 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 @app.on_message(filters.command("stats") & filters.private)
 async def get_stats(_, message: Message):
-    total_users = await Users.list_users()
+    total_users = await Users.count_users()
 
     stats_message = f"**Total Users: {total_users}**"
 
     await message.reply_text(stats_message)
 
-@staticmethod
-    async def list_users():
-        collection = usrdb
-        return await collection.find_all()
+class Users:
+    @staticmethod
+    async def count_users():
+        count = await usrdb.count_documents({})
+        return count
