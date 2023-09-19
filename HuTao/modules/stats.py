@@ -2,7 +2,7 @@ import HuTao.Config
 import platform
 import time
 import datetime
-from HuTao import app, dbname, get_readable_time, StartTime
+from HuTao import app, dbname, StartTime
 from pyrogram import filters , Client
 from platform import python_version
 from Itachi.Config import SUDO as SUPREME_USERS
