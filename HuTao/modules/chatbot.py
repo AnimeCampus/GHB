@@ -11,7 +11,7 @@ from HuTao.database.chatbot_db import chatbotdb, addchat_bot, rmchat_bot
 
 buttons = InlineKeyboardMarkup([[ InlineKeyboardButton(text="Enable", callback_data="add_chat"),InlineKeyboardButton(text="Disable", callback_data="rm_chat")]])  
 
-@Client.on_message(filters.command("chatbot"))
+@app.on_message(filters.command("chatbot"))
 async def _check_bot(_, message):
     if message.sender_chat:
         return
@@ -27,7 +27,7 @@ async def _check_bot(_, message):
         return await message.reply_text("Choose An Option.",reply_markup=buttons)
     
 
-@Client.on_callback_query(filters.regex("add_chat"))
+@app.on_callback_query(filters.regex("add_chat"))
 async def _addchat(app : Client, query : CallbackQuery):
     user_id = query.from_user.id
     chat_id = query.message.chat.id
@@ -56,7 +56,7 @@ async def _addchat(app : Client, query : CallbackQuery):
         elif check_chat:
             await query.message.edit_caption("Chatbot is already enabled in this chat.")   
              
-@Client.on_callback_query(filters.regex("rm_chat"))
+@app.on_callback_query(filters.regex("rm_chat"))
 async def _rmchat(app : Client, query : CallbackQuery):
     user_id = query.from_user.id
     chat_id = query.message.chat.id
@@ -99,7 +99,7 @@ async def itachi_message(message : Message):
     else:
         return False
 
-@Client.on_message(filters.text  & ~filters.bot & ~filters.via_bot,group=9)
+@app.on_message(filters.text  & ~filters.bot & ~filters.via_bot,group=10)
 async def chatbot(_, message): 
     chat_id = message.chat.id
     check_chat = await chatbotdb.find_one({"chat_id" : chat_id})
