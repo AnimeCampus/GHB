@@ -1,7 +1,7 @@
 from HuTao import dbname
 
 
-chatbotdb = dbname.chatbot
+chatbotdb = dbname["chatbot"]
 
 
 async def addchat_bot(chat_id : int):
