@@ -10,7 +10,7 @@ usrdb = dbname["users"]
 async def get_stats(_, message: Message):
     user_id = message.from_user.id
 
-    if user_id not in SUDO and user_id != OWNER_ID:
+    if user_id not in SUDO and user_id != OWNER:
         await message.reply_text("You are not authorized to use this command.")
         return
 
