@@ -6,7 +6,7 @@ from Itachi import app,BOT_USERNAME,BOT_ID, BOT_NAME,db
 from pyrogram import filters,enums, Client
 from pyrogram.types import Message , InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 
 from Itachi.modules.pyro.chat_actions import send_action
-from Itachi.modules.mongo.chatbot_db import chatbotdb,addchat_bot,rmchat_bot
+from HuTao.database.chatbot_db import chatbotdb, addchat_bot, rmchat_bot
 
 
 buttons = InlineKeyboardMarkup([[ InlineKeyboardButton(text="Enable", callback_data="add_chat"),InlineKeyboardButton(text="Disable", callback_data="rm_chat")]])  
