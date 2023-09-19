@@ -1,4 +1,5 @@
 from HuTao.database import *
+from HuTao import dbname
 
 wlcm = dbname["welcome"]
 
