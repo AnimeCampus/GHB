@@ -4,6 +4,7 @@
 import time
 from logging import ERROR, INFO, StreamHandler, basicConfig, getLogger, handlers
 from pyrogram import Client
+from async_pymongo import AsyncClient
 import pytz
 
 from HuTao.Config import (
@@ -33,6 +34,12 @@ basicConfig(
 )
 getLogger("pyrogram").setLevel(ERROR)
 
+# --------------------------------- #
+
+DBNAME = "HUTAO"
+
+mongo = AsyncClient(DB_URL)
+dbname = mongo[DBNAME]
 
 # --------------------------------- #
 
