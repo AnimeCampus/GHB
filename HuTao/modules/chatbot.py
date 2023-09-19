@@ -117,3 +117,9 @@ async def chatbot(_, message):
             to_reply = to_reply.replace("Safone","⏤͟͞ 𝙉𝘼𝙉𝙊™ 🇮🇳")
             to_reply = to_reply.replace("t.me/asmsafone","t.me/GenXNano")
         await message.reply_text(to_reply)
+
+
+__mod__ = "CHATBOT"
+__help__ = """
+**» /chatbot** - To activate chatbot 
+"""
