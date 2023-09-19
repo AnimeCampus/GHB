@@ -24,9 +24,9 @@ SUDO = list({int(x)for x in ("").split()})
 
 SUPPORT_CHAT = "NanoSTestingArea" # SUPPORT GROUP (ID OR USERNAME)
 
-LOG_CHANNEL_ID = -1001884764127 #LOG GROUP ID FOR YOUR BOT
+LOG_CHANNEL_ID = -1001949829830 #LOG GROUP ID FOR YOUR BOT
 
-OWNER = list({int(x)for x in ("1805959544").split()}) #OWNER ID
+OWNER = list({int(x)for x in ("6198858059").split()}) #OWNER ID
 
 DB_URL = "mongodb+srv://sukuna:fazaljuly2@sukuna.vipbn9a.mongodb.net/?retryWrites=true&w=majority" # MONGO DB URL
 
