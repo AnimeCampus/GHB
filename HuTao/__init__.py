@@ -62,6 +62,6 @@ app = Client(
 
 # START THE CLIENT AND GET INFO
 app.start()
-BOT_ID = app.me.id
-BOT_NAME = app.me.first_name
-BOT_USERNAME = app.me.username
+BOT_ID = "5691954374"
+BOT_NAME = "Kᴏᴍɪ"
+BOT_USERNAME = "TheKomi_Bot"
