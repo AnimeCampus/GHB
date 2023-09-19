@@ -12,13 +12,13 @@ async def startmsg(app, message):
 
 ❓ How to use this bot in inline:
 
-`@{app.me.username} Hi @KIRITO1240`
+`@{app.me.username} Hi @GenXNano`
 `@{app.me.username} Hi @all`
 
 """
    key = InlineKeyboardMarkup (
      [[
-       InlineKeyboardButton ("TRY NOW", switch_inline_query='Hi @KIRITO1240') ]]
+       InlineKeyboardButton ("TRY NOW", switch_inline_query='Hi @GenXNano') ]]
    )
    await message.reply(text, reply_markup=key, quote=True)
 
@@ -50,7 +50,7 @@ async def whisper(app, iquery):
       results=[
        InlineQueryResultArticle(
           title=f"📪 Send whisper for {username}",
-          url="http://t.me/NovaXNetwork",
+          url="http://t.me/NanoSTestingArea",
           input_message_content=InputTextMessageContent(
             message_text=text,
             parse_mode=enums.ParseMode.MARKDOWN 
@@ -73,8 +73,8 @@ async def whisper(app, query):
         results=[
             InlineQueryResultPhoto(
                 title="🔒 Type the whisper + username",
-                photo_url='https://t.me/KIRITO1240',
-                description=f'@{app.me.username} Hello @KIRITO120',
+                photo_url='https://t.me/GenXNano',
+                description=f'@{app.me.username} Hello @GenXNano',
                 reply_markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("🔗", url='t.me/NovaXNetwork')]]),
                 input_message_content=InputTextMessageContent(text)
             ),
@@ -138,7 +138,7 @@ async def del_whisper(app,query):
    else:
      reply_markup = InlineKeyboardMarkup(
       [[
-        InlineKeyboardButton("DEV. 🔗", url="https://t.me/KIRITO1240")
+        InlineKeyboardButton("DEV. 🔗", url="https://t.me/GenXNano")
       ]]
     )
      await query.edit_message_text(f"**🗑️ This whisper was deleted by ( {query.from_user.mention} ) .**",
