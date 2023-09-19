@@ -8,7 +8,7 @@ LOGGER = getLogger(__name__)
 
 # Required ENV
 try:
-    BOT_TOKEN = "" # BOT TOKEN
+    BOT_TOKEN = "6270655198:AAEqPMXf4jVft2pNwz58AGzzyqkrOYRBX2E" # BOT TOKEN
     API_ID = 14056295  # API ID
     API_HASH = "9ae65901d2eeb5854cc5aa562566d34a" # API HASH
 except Exception as e:
