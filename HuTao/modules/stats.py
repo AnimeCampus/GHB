@@ -3,7 +3,7 @@ import platform
 import time
 import datetime
 from HuTao import app, dbname
-from HuTao.database.users_db import usrdb
+from HuTao.database.users_db import *
 from pyrogram import filters , Client
 from platform import python_version
 from HuTao.Config import SUDO 
