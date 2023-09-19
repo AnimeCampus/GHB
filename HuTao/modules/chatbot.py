@@ -86,6 +86,8 @@ async def disable_chatbot(_, query):
         else:
             await query.message.edit_caption("**Chatbot is already disabled in this chat.**")
 
+# ...
+
 # Function to handle chatbot messages
 async def handle_chatbot_message(_, message):
     chat_id = message.chat.id
@@ -111,8 +113,8 @@ async def handle_chatbot_message(_, message):
 
         await message.reply_text(to_reply)
 
-# Register the chatbot message handler
-app.add_handler(handle_chatbot_message, filters.text & ~filters.bot & ~filters.via_bot, group=9)
+# Register the chatbot message handler without the group argument
+app.add_handler(handle_chatbot_message, filters.text & ~filters.bot & ~filters.via_bot)
 
    
 __mod__ = "CHATBOT"
