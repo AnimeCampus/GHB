@@ -10,6 +10,7 @@ from HuTao.Config import SUDO
 from psutil import boot_time, cpu_percent, disk_usage, virtual_memory
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 from motor.motor_asyncio import AsyncIOMotorClient
+from pyrogram.types import Message
 
 @app.on_message(filters.command("stats") & filters.private)
 async def get_stats(_, message: Message):
