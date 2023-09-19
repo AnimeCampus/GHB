@@ -1,5 +1,5 @@
 from HuTao import dbname
-
+from HuTao.database import *
 
 chatbotdb = dbname["chatbot"]
 
