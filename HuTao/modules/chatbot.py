@@ -2,10 +2,10 @@ import os
 import requests
 import json
 import asyncio
-from Itachi import app,BOT_USERNAME,BOT_ID, BOT_NAME,db
-from pyrogram import filters,enums, Client
+from HuTao import app, BOT_USERNAME, BOT_ID, BOT_NAME,db
+from pyrogram import filters, enums, Client
 from pyrogram.types import Message , InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 
-from Itachi.modules.pyro.chat_actions import send_action
+from HuTao.database.chat_actions import send_action
 from HuTao.database.chatbot_db import chatbotdb, addchat_bot, rmchat_bot
 
 
